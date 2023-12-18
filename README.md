@@ -2,11 +2,11 @@
 <pre><code>apt update && apt upgrade -y</code></pre>
 
 ### INSTALL SCRIPT 
-<pre><code>apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/BvsshXyz/v2/main/Bayu.sh && chmod +x Bayu.sh && ./Bayu.sh.sh
+<pre><code>apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/BvsshXyz/v2/main/premi.sh && chmod +x premi.sh && ./premi.sh.sh
 </code></pre>
 
 ### UPDATE SCRIPT
-<pre><code>wget https://raw.githubusercontent.com/BvsshXyz/v2/main/BayuUP.sh && chmod +x BayuUP.sh && ./BayuUP.sh</code></pre>
+<pre><code>wget https://raw.githubusercontent.com/BvsshXyz/v2/main/update.sh && chmod +x update.sh && ./update.sh</code></pre>
 
 
 ### WAJIB IZIN IP CONTACT ADMIN ©YINN STORE

@@ -18,15 +18,15 @@ NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
 TIME=$(date '+%d %b %Y')
-ipsaya=$(curl -sS ipv4.icanhazip.com)
+ipsaya=$(cu
 TIMES="10"
 CHATID="6648546911"
-KEY="6208481608:AAH8H8-a6DmjXZOJBm_6IJsdfZJ1nTakxJ8"
+KEY="6208481608:AAH8H8-a6DmjXZOJBm_6
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 # ===================
 clear
   # // Exporint IP AddressInformation
-export IP=$( curl -sS icanhazip.com )
+
 
 # // Clear Data
 clear
@@ -55,8 +55,8 @@ fi
 # // Checking System
 if [[ $( cat /etc/os-release | grep -w ID | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/ID//g' ) == "ubuntu" ]]; then
     echo -e "${OK} Your OS Is Supported ( ${green}$( cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g' )${NC} )"
-elif [[ $( cat /etc/os-release | grep -w ID | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/ID//g' ) == "debian" ]]; then
-    echo -e "${OK} Your OS Is Supported ( ${green}$( cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g' )${NC} )"
+el ID | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/ID//g' ) == "debian" ]]; then
+    echo -e "${Ogreen}$( cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g' )${NC} )"
 else
     echo -e "${EROR} Your OS Is Not Supported ( ${YELLOW}$( cat /etc/os-release | grep -w PRETTY_NAME | head -n1 | sed 's/=//g' | sed 's/"//g' | sed 's/PRETTY_NAME//g' )${NC} )"
     exit 1
@@ -78,7 +78,7 @@ if [ "${EUID}" -ne 0 ]; then
 		echo "You need to run this script as root"
 		exit 1
 fi
-if [ "$(systemd-detect-virt)" == "openvz" ]; then
+if [ "$(systemd-deten
 		echo "OpenVZ is not supported"
 		exit 1
 fi
@@ -86,11 +86,11 @@ red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
 #IZIN SCRIPT
-MYIP=$(curl -sS ipv4.icanhazip.com)
+MYIP=
 echo -e "\e[32mloading...\e[0m"
 clear
 #IZIN SCRIPT
-MYIP=$(curl -sS ipv4.icanhazip.com)
+MYIP=$
 echo -e "\e[32mloading...\e[0m" 
 clear
 # Version sc
@@ -98,14 +98,14 @@ clear
 #########################
 # USERNAME
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/BvsshXyz/v2/main/izinv2 | grep $MYIP | awk '{print $2}')
+usernamrep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/BvsshXyz/v2/main/izinv2 | grep $MYIP | awk '{print $3}')
+expx=$(curl ht/main/izinv2 | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 # DETAIL ORDER
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
-exp=$(cat /usr/bin/e)
+
 clear
 # CERTIFICATE STATUS
 d1=$(date -d "$valid" +%s)
@@ -178,7 +178,7 @@ function is_root() {
 print_install "Membuat direktori xray"
     mkdir -p /etc/xray
     curl -s ifconfig.me > /etc/xray/ipvps
-    touch /etc/xray/domain
+    touch /etc/
     mkdir -p /var/log/xray
     chown www-data.www-data /var/log/xray
     chmod +x /var/log/xray
@@ -272,9 +272,9 @@ function base_package() {
     sudo apt-get remove --purge exim4 -y
     sudo apt-get remove --purge ufw firewalld -y
     sudo apt-get install -y --no-install-recommends software-properties-common
-    echo iptables-persistent iptables-persistent/autosave_v4 boolean true | debconf-set-selections
-    echo iptables-persistent iptables-persistent/autosave_v6 boolean true | debconf-set-selections
-    sudo apt-get install -y speedtest-cli vnstat libnss3-dev libnspr4-dev pkg-config libpam0g-dev libcap-ng-dev libcap-ng-utils libselinux1-dev libcurl4-nss-dev flex bison make libnss3-tools libevent-dev bc rsyslog dos2unix zlib1g-dev libssl-dev libsqlite3-dev sed dirmngr libxml-parser-perl build-essential gcc g++ python htop lsof tar wget curl ruby zip unzip p7zip-full python3-pip libc6 util-linux build-essential msmtp-mta ca-certificates bsd-mailx iptables iptables-persistent netfilter-persistent net-tools openssl ca-certificates gnupg gnupg2 ca-certificates lsb-release gcc shc make cmake git screen socat xz-utils apt-transport-https gnupg1 dnsutils cron bash-completion ntpdate chrony jq openvpn easy-rsa
+    echo iptant/autosave_v4 boolean true | debconf-set-selections
+    echo iptables-persistent iptables-pertent/autosave_v6 boolean true | debconf-set-selections
+    sudo apt-get install -y spedev libnspr4-dev pkg-config libpam0g-dev libcap-ng-dev libcap-ng-utils libselinux1-dev libcurl4-nss-dev flex bison make libnss3-tools libevent-dev bc rsyslog dos2unix zlib1g-dev libssl-dev libsqlite3-dev sed dirmngr libxml-parser-perl build-essential gcc g++ python htop lsof tar wget curl ruby zip unzip p7zip-full python3-pip libc6 util-linux build-essential msmtp-mta ca-certificates bsd-mailx iptables iptables-persistent netfilter-persistent net-tools openssl ca-certificates gnupg gnupg2 ca-certificates lsb-release gcc shc make cmake git screen socat xz-utils apt-transport-https gnupg1 dnsutils cron bash-completion ntpdate chrony jq openvpn easy-rsa
     print_success "Packet Yang Dibutuhkan"
     
 }
@@ -286,7 +286,7 @@ clear
     echo -e "   .----------------------------------."
 echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
 echo -e "   '----------------------------------'"
-echo -e "     \e[1;32m1)\e[0m Domain Sendiri"
+echo -e "     \e[1;32m1)
 echo -e "     \e[1;32m2)\e[0m Gunakan Domain Random Dari SC"
 echo -e "   ------------------------------------"
 read -p "   Please select numbers 1 or Any Button(Random) : " host
@@ -295,7 +295,7 @@ if [[ $host == "1" ]]; then
 echo -e "   \e[1;32mPlease Enter Your Subdomain $NC"
 read -p "   Subdomain: " host1
 echo "IP=" >> /var/lib/kyt/ipvps.conf
-echo $host1 > /etc/xray/domain
+echo $host1
 echo $host1 > /root/domain
 echo ""
 elif [[ $host == "2" ]]; then
@@ -312,7 +312,7 @@ clear
 clear
 #GANTI PASSWORD DEFAULT
 restart_system() {
-    USRSC=$(wget -qO- https://raw.githubusercontent.com/BvsshXyz/v2/main/izinv2 | grep $ipsaya | awk '{print $2}')
+    USRSC=$(wget -qO- https: | grep $ipsaya | awk '{print $2}')
     EXPSC=$(wget -qO- https://raw.githubusercontent.com/BvsshXyz/v2/main/izinv2 | grep $ipsaya | awk '{print $3}')
     TIMEZONE=$(printf '%(%H:%M:%S)T')
     TEXT="
@@ -348,7 +348,7 @@ print_install "Memasang SSL Pada Domain"
     chmod +x /root/.acme.sh/acme.sh
     /root/.acme.sh/acme.sh --upgrade --auto-upgrade
     /root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
-    /root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
+    /root/.acme.shone -k ec-256
     ~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
     chmod 777 /etc/xray/xray.key
     print_success "SSL Certificate"
@@ -360,7 +360,7 @@ rm -rf /etc/vmess/.vmess.db
     rm -rf /etc/trojan/.trojan.db
     rm -rf /etc/shadowsocks/.shadowsocks.db
     rm -rf /etc/ssh/.ssh.db
-    rm -rf /etc/bot/.bot.db
+    rm
     mkdir -p /etc/bot
     mkdir -p /etc/xray
     mkdir -p /etc/vmess
@@ -412,8 +412,8 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
     wget -O /etc/xray/config.json "${REPO}limit/config.json" >/dev/null 2>&1
     #wget -O /usr/local/bin/xray "${REPO}xray/xray.linux.64bit" >/dev/null 2>&1
     wget -O /etc/systemd/system/runn.service "${REPO}limit/runn.service" >/dev/null 2>&1
-    #chmod +x /usr/local/bin/xray
-    domain=$(cat /etc/xray/domain)
+    #chmod +x /usr/local/bin/
+    
     IPVS=$(cat /etc/xray/ipvps)
     print_success "Core Xray 1.8.1 Latest Version"
     
@@ -424,8 +424,7 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
     print_install "Memasang Konfigurasi Packet"
     wget -O /etc/haproxy/haproxy.cfg "${REPO}limit/haproxy.cfg" >/dev/null 2>&1
     wget -O /etc/nginx/conf.d/xray.conf "${REPO}limit/xray.conf" >/dev/null 2>&1
-    sed -i "s/xxx/${domain}/g" /etc/haproxy/haproxy.cfg
-    sed -i "s/xxx/${domain}/g" /etc/nginx/conf.d/xray.conf
+    sed -i "s/xxx/${domain}/g" /etc/haproxy/hapro
     curl ${REPO}limit/nginx.conf > /etc/nginx/nginx.conf
     
 cat /etc/xray/xray.crt /etc/xray/xray.key | tee /etc/haproxy/hap.pem
@@ -475,7 +474,7 @@ chmod +x /etc/pam.d/common-password
     debconf-set-selections <<<"keyboard-configuration keyboard-configuration/optionscode string "
     debconf-set-selections <<<"keyboard-configuration keyboard-configuration/store_defaults_in_debconf_db boolean true"
     debconf-set-selections <<<"keyboard-configuration keyboard-configuration/switch select No temporary switch"
-    debconf-set-selections <<<"keyboard-configuration keyboard-configuration/toggle select No toggling"
+    debconf-set-selectioikeyboard-configuration/toggle select No toggling"
     debconf-set-selections <<<"keyboard-configuration keyboard-configuration/unsupported_config_layout boolean true"
     debconf-set-selections <<<"keyboard-configuration keyboard-configuration/unsupported_config_options boolean true"
     debconf-set-selections <<<"keyboard-configuration keyboard-configuration/unsupported_layout boolean true"
